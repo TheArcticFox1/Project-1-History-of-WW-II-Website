@@ -1,0 +1,110 @@
+body {
+    background-color: grey;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    animation: color-change 35s ease-in-out infinite;
+}
+
+h1 {
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: rgba(200, 55, 55, 0.899)
+    }
+
+    33% {
+        background-color: grey;
+    }
+
+    66% {
+        background-color: rgba(200, 55, 55, 0.899);
+    }
+
+    100% {
+        background-color: grey;
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 20px;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.video-description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10px;
+}
+
+/* Apply spacing between video clips using margin */
+
+.video-grid {
+
+    display: flex;
+
+    margin: 35px;
+
+    justify-content: center;
+
+    /* Distribute space between videos */
+
+    padding: 25px;
+
+    /* Add overall padding for spacing around the videos */
+}
+
+.video {
+    flex: 1.5;
+
+    /* Equal width for each video */
+
+    margin-right: 10px;
+
+    /* Adjusted the spacing between video clips */
+}
+
+/* Removed the right margin from the last video to prevent overflowing */
+
+.video:last-child {
+    margin-right: 0;
+}
+
+.video iframe {
+    width: auto;
+    height: auto;
+}
+
+.video-container div {
+    margin: 10px;
+}
